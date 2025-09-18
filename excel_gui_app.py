@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 from __future__ import annotations
 import os, sys, io, zipfile, secrets
 from datetime import datetime
@@ -16,7 +14,7 @@ from werkzeug.utils import secure_filename
 # ----------------------------- Config ---------------------------------
 APP_TITLE = "Excel Grade Parser"
 RUNS_DIR = Path("runs")
-ALLOWED_EXT = {".xlsx", ".xlsm"}  # convert legacy .xls to .xlsx first
+ALLOWED_EXT = {".xlsx", ".xlsm"} 
 
 REQUIRED_COLS  = ["CourseID","Course Name","Term","Section","Enroll","A","B","C","D","F","W","I"]
 HEADER_MINIMUM = ["CourseID","Course Name","Term","Section","A","B","C","D","F"]
